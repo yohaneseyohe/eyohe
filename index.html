@@ -8,7 +8,12 @@
 <meta name="theme-color" content="#06070A">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Yohanes Mesfin (EYOHE) — Cybersecurity Specialist & Software Developer">
-<meta property="og:description" content="Think like an attacker. Build like a defender.">
+<meta property="og:description" content="Cybersecurity, web application security, and security-minded software development by EYOHE.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="EYOHE — Cybersecurity & Software Development">
+<meta name="twitter:description" content="Think like an attacker. Build like a defender.">
+<meta name="author" content="Yohanes Mesfin">
+<meta name="robots" content="index,follow">
 
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2306070A'/%3E%3Cpath d='M20 44 L32 16 L44 44 M24.5 34 H39.5' stroke='%237A70F3' stroke-width='4' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
 
@@ -216,10 +221,50 @@
   .cred-stat .big{font-family:var(--serif); font-size:2.1rem; color:var(--accent-pale);}
   .cred-stat .label{color:var(--text-dim); font-size:0.92rem;}
   .cred-note{color:var(--text-faint); font-size:0.85rem; margin-top:0.8rem;}
+  .cred-detail{display:block;color:var(--text-faint);font-size:.82rem;margin-top:.12rem;}
+  .learning-list strong{color:var(--text);font-weight:600;}
+  .learning-list li{padding-bottom:.35rem;}
+  .cred-divider{height:1px;background:var(--border);margin:1.2rem 0;}
+  .cred-item-title{font-size:.92rem;font-weight:600;color:var(--text);margin-top:.3rem;}
   .learning-list{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:0.7rem;}
   .learning-list li{color:var(--text-dim); font-size:0.94rem; padding-left:1rem; position:relative;}
   .learning-list li::before{content:"–"; position:absolute; left:0; color:var(--text-faint);}
   @media (max-width:760px){.cred-grid{grid-template-columns:1fr;}}
+
+
+  /* Premium global + local payment showcase */
+  .payment-showcase{position:relative;isolation:isolate;overflow:hidden;padding:1.25rem 0 .25rem}
+  .payment-showcase:before{content:"";position:absolute;z-index:-1;inset:10% -20% 8%;background:radial-gradient(ellipse at 20% 30%,rgba(126,93,255,.13),transparent 42%),radial-gradient(ellipse at 82% 68%,rgba(38,174,255,.08),transparent 36%);pointer-events:none;animation:paymentGlow 8s ease-in-out infinite alternate}
+  @keyframes paymentGlow{from{opacity:.55;transform:translate3d(-1%,0,0)}to{opacity:1;transform:translate3d(1%,0,0)}}
+  .payment-eyebrow{margin-bottom:.55rem!important}
+  .payment-main-title{font-family:var(--serif)!important;font-size:clamp(1.55rem,3.2vw,2.35rem)!important;line-height:1.2;text-transform:none!important;letter-spacing:-.025em!important;color:var(--text)!important;margin:0 0 .65rem!important}
+  .payment-main-title span{color:var(--accent-pale)}
+  .payment-intro{max-width:58ch;color:var(--text-dim);font-size:.92rem;line-height:1.7;margin-bottom:1.35rem}
+  .payment-feature-grid{display:grid;grid-template-columns:1fr;gap:1rem}
+  .payment-feature{position:relative;overflow:hidden;border:1px solid var(--border);border-radius:14px;padding:1.2rem;background:linear-gradient(140deg,rgba(116,95,255,.075),rgba(10,12,20,.3) 62%);transition:transform .3s ease,border-color .3s ease,box-shadow .3s ease}
+  .payment-feature:hover{transform:translateY(-3px);border-color:var(--accent-dim);box-shadow:0 12px 36px rgba(76,54,200,.12)}
+  .payment-feature-top{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-bottom:.8rem}
+  .payment-index{font:500 .67rem var(--mono);letter-spacing:.1em;color:var(--text-faint)}
+  .payment-feature h4{font-family:var(--sans);font-size:1.1rem;font-weight:650;color:var(--text);margin:0 0 .35rem}
+  .payment-tag{font-size:.75rem;font-weight:500;color:var(--text-faint)}
+  .payment-muted{font-size:.8rem;color:var(--accent-pale);margin:0 0 .8rem}
+  .payment-copy{font-size:.83rem;line-height:1.7;color:var(--text-dim);margin-bottom:1rem}
+  .network-list{display:flex;flex-direction:column;gap:.55rem}
+  .network-row{display:flex;align-items:center;gap:.7rem;padding:.65rem .7rem;border:1px solid var(--border-soft);border-radius:10px;background:rgba(6,9,18,.48);transition:transform .25s ease,border-color .25s ease}
+  .network-row:hover{transform:translateX(3px);border-color:var(--accent-dim)}
+  .network-symbol{display:grid;place-items:center;flex:0 0 34px;width:34px;height:34px;border-radius:50%;font-size:1.15rem;font-weight:800;color:white;box-shadow:0 0 18px rgba(111,92,255,.16)}
+  .network-symbol.tron{background:linear-gradient(145deg,#ff625e,#d91f3c)}.network-symbol.ethereum{background:linear-gradient(145deg,#668cff,#293ac7)}.network-symbol.bnb{background:linear-gradient(145deg,#ffc94a,#e99a00);color:#242018}.network-symbol.solana{background:linear-gradient(145deg,#101521,#111827);color:#8af6d0;border:1px solid #5140a5}
+  .network-info{min-width:0;flex:1}.network-info strong{display:block;font-size:.82rem;color:var(--text);font-weight:600}.network-info strong small{display:inline;color:var(--text-faint);font-size:.77rem;font-weight:400}.network-info>small{display:block;margin-top:.16rem;color:var(--text-faint);font-size:.7rem}
+  .network-status{flex-shrink:0;border:1px solid var(--border);border-radius:100px;padding:.25rem .5rem;font-size:.64rem;color:var(--text-dim)}.network-status.recommended{border-color:var(--accent-dim);color:var(--accent-pale);background:rgba(110,84,255,.12)}
+  .payment-warning{margin-top:.85rem;padding:.7rem .8rem;border-left:2px solid var(--accent-dim);background:rgba(111,92,255,.055);color:var(--text-faint);font-size:.73rem;line-height:1.6}
+  .local-feature{display:flex;flex-direction:column;align-items:flex-start}.local-icon{font-size:1.3rem!important}.local-payment-visual{position:relative;display:grid;place-items:center;align-self:center;width:100%;max-width:270px;height:125px;margin:.2rem auto 1rem;overflow:hidden}.local-orbit{position:absolute;border:1px solid rgba(142,115,255,.45);border-radius:50%;transform:rotate(-16deg);animation:orbitFloat 5s ease-in-out infinite alternate}.orbit-one{width:88%;height:66%}.orbit-two{width:64%;height:95%;transform:rotate(58deg);border-color:rgba(55,180,255,.35);animation-delay:-2.5s}.local-currency{display:grid;place-items:center;width:76px;height:76px;border-radius:18px;background:linear-gradient(145deg,#6e55ff,#201b54);border:1px solid rgba(180,163,255,.7);color:white;font:700 1.2rem var(--mono);box-shadow:0 0 34px rgba(113,82,255,.38);transform:rotate(-7deg);animation:currencyFloat 4s ease-in-out infinite}.local-mini-card{position:absolute;right:7%;bottom:10%;font-size:.68rem;color:var(--accent-pale);border:1px solid var(--border);border-radius:8px;background:var(--surface);padding:.45rem .6rem;animation:currencyFloat 4.5s ease-in-out infinite reverse}
+  @keyframes orbitFloat{from{opacity:.5;scale:.96}to{opacity:1;scale:1.04}}@keyframes currencyFloat{0%,100%{translate:0 0}50%{translate:0 -5px}}
+  .payment-cta{display:flex;align-items:center;justify-content:space-between;gap:1rem;width:100%;text-decoration:none;color:var(--text);border:1px solid var(--accent-dim);border-radius:100px;padding:.75rem 1rem;font-size:.82rem;transition:background .25s ease,transform .25s ease}.payment-cta:hover{background:rgba(116,95,255,.12);transform:translateY(-2px)}.payment-cta span:last-child{color:var(--accent-pale);font-size:1.1rem}
+  .payment-availability{font-size:.72rem;color:var(--text-faint);margin-top:.7rem}
+  .payment-trust-row{display:grid;grid-template-columns:repeat(3,1fr);gap:.7rem;margin-top:1rem;padding:1rem 0;border-top:1px solid var(--border-soft)}.payment-trust-row>div{display:flex;align-items:center;gap:.6rem;min-width:0}.trust-icon{display:grid;place-items:center;flex:0 0 32px;height:32px;border:1px solid var(--border);border-radius:50%;color:var(--accent-pale);font-size:1rem}.payment-trust-row strong{display:block;font-size:.7rem;color:var(--text)}.payment-trust-row small{display:block;color:var(--text-faint);font-size:.65rem;margin-top:.15rem}
+  @media(min-width:680px){.payment-feature-grid{grid-template-columns:1.15fr .85fr}.payment-feature{padding:1.3rem}.local-payment-visual{height:160px}}
+  @media(max-width:430px){.payment-trust-row{grid-template-columns:1fr}.network-status{font-size:.59rem;padding:.22rem .38rem}.network-row{padding:.55rem}.payment-feature{padding:1rem}}
+  @media(prefers-reduced-motion:reduce){.payment-showcase:before,.local-orbit,.local-currency,.local-mini-card{animation:none!important}.payment-feature,.network-row,.payment-cta{transition:none!important}}
 
   /* Contact */
   #contact{padding-top:clamp(70px,10vw,130px); padding-bottom:clamp(70px,10vw,130px);}
@@ -238,12 +283,36 @@
   .contact-list a:last-child{border-bottom:none;}
   .contact-list a:hover{color:var(--accent-pale);}
   .contact-list span.k{color:var(--text-faint); font-size:0.82rem; font-family:var(--mono);}
+  .payment-list{gap:.9rem;}
+  .payment-method{display:flex;align-items:flex-start;gap:.85rem;padding:.35rem 0;}
+  .payment-icon{display:grid;place-items:center;flex:0 0 38px;height:38px;border:1px solid var(--border);border-radius:10px;color:var(--accent-pale);font-family:var(--mono);font-size:.76rem;font-weight:600;}
+  .payment-icon.crypto{font-size:1.35rem;}
+  .payment-method strong{display:block;color:var(--text);font-size:.94rem;font-weight:600;}
+  .payment-method small{display:block;color:var(--text-faint);font-size:.82rem;line-height:1.55;margin-top:.2rem;}
   @media (max-width:860px){.contact-grid{grid-template-columns:1fr;}}
 
   footer{border-top:1px solid var(--border-soft); padding:1.8rem var(--edge);}
   .footer-inner{max-width:var(--max); margin:0 auto; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.8rem; color:var(--text-faint); font-size:0.84rem;}
   .footer-inner a{text-decoration:none; color:var(--text-faint);}
   .footer-inner a:hover{color:var(--text-dim);}
+
+  /* Additional portfolio polish */
+  .eyebrow{font:500 11px/1.4 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--accent-pale);margin:0 0 16px}
+  .process-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:34px}
+  .process-card{position:relative;min-height:220px;padding:25px 22px;border:1px solid var(--border);border-radius:14px;background:linear-gradient(145deg,rgba(122,112,243,.075),rgba(13,15,20,.72) 58%);overflow:hidden;transition:transform .25s ease,border-color .25s ease,background .25s ease}
+  .process-card:hover{transform:translateY(-5px);border-color:var(--accent-dim);background:linear-gradient(145deg,rgba(122,112,243,.13),rgba(13,15,20,.92) 65%)}
+  .process-number{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border:1px solid var(--accent-dim);border-radius:10px;color:var(--accent-pale);font:500 12px var(--mono);margin-bottom:24px}
+  .process-card h3{font-size:clamp(20px,2vw,25px);margin-bottom:10px}
+  .process-card p{color:var(--text-dim);font-size:14px;line-height:1.75}
+  .availability-band{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-top:36px;padding:24px 26px;border:1px solid var(--border);border-radius:14px;background:var(--surface)}
+  .availability-band p{color:var(--text-dim);font-size:14px;max-width:650px}
+  .availability-band strong{display:block;color:var(--text);font-size:17px;margin-bottom:5px}
+  .availability-band .btn{flex-shrink:0}
+  .work-link{display:inline-flex;align-items:center;gap:8px}
+  .work-link svg{width:15px;height:15px;flex-shrink:0}
+  @media(max-width:850px){.process-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.availability-band{align-items:flex-start;flex-direction:column}}
+  @media(max-width:520px){.process-grid{grid-template-columns:1fr}.process-card{min-height:unset}.availability-band{padding:20px}}
+
 </style>
 </head>
 <body>
@@ -260,6 +329,7 @@
       <a href="#about">About</a>
       <a href="#work">Work</a>
       <a href="#skills">Skills</a>
+      <a href="#approach">Approach</a>
       <a href="#contact">Contact</a>
     </nav>
     <div class="nav-actions">
@@ -287,12 +357,12 @@
     <div>
       <p class="hero-name">I'm Yohanes Mesfin <span class="brand">(EYOHE)</span></p>
       <h1>
-        <span class="line-mask"><span>Build with security at the core.</span></span><span class="line-mask"><span>Think like an attacker Build like defender.</span></span>
+        <span class="line-mask"><span>Build with security at the core.</span></span><span class="line-mask"><span>Think like an attacker. Build like a defender.</span></span>
       </h1>
       <div class="hero-stagger">
         <div class="hero-status"><span class="dot" aria-hidden="true"></span> Open to select security &amp; development work</div>
         <p class="hero-role">Cybersecurity Specialist · Software Developer · Founder</p>
-        <p class="hero-copy">I'm Yohanes Mesfin, a cybersecurity specialist and software developer building secure websites, Android apps, iOS apps, and digital products. I combine an attacker's mindset with a security-first engineering approach to help create software people can trust.</p>
+        <p class="hero-copy">I'm Yohanes Mesfin, a cybersecurity specialist and software developer building secure websites, Android apps, iOS apps, and digital products. I bring an attacker’s mindset to security testing and a defender’s discipline to software engineering — helping teams find weaknesses earlier and ship more trustworthy digital products.</p>
         <div class="cta-row">
           <a href="#work" class="btn btn-primary">Explore My Work</a>
           <a href="#contact" class="btn btn-secondary">Let's Build Something Secure</a>
@@ -312,7 +382,7 @@
       <div class="reveal reveal-left">
         <p class="about-lead">Two ways of looking at the same system: how it breaks, and how it should have been built.</p>
         <p class="about-body">I'm Yohanes Mesfin — building and researching under the name EYOHE. My work starts from an attacker's questions: where is trust assumed, what happens when input isn't what's expected, what's reachable that shouldn't be. Those questions shape how I build — authentication, authorization, data handling, and validation are design decisions made early, not patched in later.</p>
-        <p class="about-body">On the development side, I build web applications, Android apps, and iOS apps end to end, treating user trust as something earned through engineering, not claimed in a footer badge.</p>
+        <p class="about-body">I also build web applications and mobile experiences from the ground up. The goal is practical: products that are useful, maintainable, and designed with security in mind from the start.</p>
       </div>
       <div class="principle-list">
         <div class="principle reveal reveal-up" style="transition-delay:.05s"><span class="mark">01</span><p><strong>Attacker behavior first</strong>Understand how a system is likely to be probed before deciding how it should be defended.</p></div>
@@ -347,7 +417,7 @@
             <div class="work-index">02 / Platform</div>
             <h3>ABET Workforce / ABET Digital</h3>
             <span class="work-cat">Workforce &amp; digital services</span>
-            <p class="work-desc">A workforce and digital-services platform. Development has been completed and the service is live, according to the project owner.</p>
+            <p class="work-desc">A workforce and digital-services platform I contributed to building, with worker, employer, and broker-facing workflows.</p>
             <a class="work-link" href="https://abetdigital.com/" target="_blank" rel="noopener noreferrer">Visit abetdigital.com <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg></a>
           </div>
         </article>
@@ -357,7 +427,7 @@
             <div class="work-index">03 / Open source · Security research</div>
             <h3>Eyohe OSINT</h3>
             <span class="work-cat">Investigation tooling</span>
-            <p class="work-desc">A cybersecurity and open-source intelligence project focused on organizing and presenting investigation-related workflows and findings.</p>
+            <p class="work-desc">An open-source project exploring OSINT workflows for authorized research, investigation organization, and clearer reporting.</p>
             <a class="work-link" href="https://github.com/yohaneseyohe/eyohe-osint" target="_blank" rel="noopener noreferrer">View repository <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg></a>
           </div>
         </article>
@@ -377,6 +447,48 @@
   </section>
 
   <!-- SKILLS: animated tabs -->
+
+  <section id="approach" aria-label="How I work">
+    <div class="section-inner">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">A clear process. No security theatre.</p>
+          <h2>How I work</h2>
+        </div>
+        <p class="section-note">From understanding the problem to delivering work you can explain, maintain, and trust.</p>
+      </div>
+      <div class="process-grid">
+        <article class="process-card reveal reveal-up">
+          <span class="process-number">01</span>
+          <h3>Understand</h3>
+          <p>Clarify the goal, users, threat model, scope, and constraints before choosing a technical solution.</p>
+        </article>
+        <article class="process-card reveal reveal-up" style="transition-delay:.06s">
+          <span class="process-number">02</span>
+          <h3>Investigate</h3>
+          <p>Review the system, test assumptions within authorized scope, and prioritize issues by practical risk.</p>
+        </article>
+        <article class="process-card reveal reveal-up" style="transition-delay:.12s">
+          <span class="process-number">03</span>
+          <h3>Build &amp; harden</h3>
+          <p>Implement the solution with attention to access control, validation, session handling, and maintainability.</p>
+        </article>
+        <article class="process-card reveal reveal-up" style="transition-delay:.18s">
+          <span class="process-number">04</span>
+          <h3>Verify</h3>
+          <p>Retest important paths, document findings clearly, and leave practical next steps instead of vague warnings.</p>
+        </article>
+      </div>
+      <div class="availability-band reveal reveal-up">
+        <div>
+          <strong>Have a project, security review, or collaboration in mind?</strong>
+          <p>I’m open to selected opportunities in web security, authorized security testing, and security-minded product development.</p>
+        </div>
+        <a class="btn btn-primary" href="#contact">Talk about your project <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </section>
+
   <section id="skills" aria-label="Skills">
     <div class="section-inner">
       <div class="section-head">
@@ -423,27 +535,38 @@
   </section>
 
   <!-- CREDENTIALS -->
-  <section id="credentials" aria-label="Credentials and learning">
+  <section id="credentials" aria-label="Certifications and professional learning">
     <div class="section-inner">
       <div class="section-head">
-        <h2>Credentials &amp; learning</h2>
-        <p class="section-note">Confirmed achievements, kept separate from ongoing interests.</p>
+        <h2>Certifications &amp; training</h2>
+        <p class="section-note">A practical foundation in cybersecurity, web security, ethical hacking, and network defense.</p>
       </div>
       <div class="cred-grid">
         <div class="cred-card reveal reveal-up">
-          <h3>Confirmed</h3>
-          <div class="cred-stat"><span class="big" id="credStat">Top 0%</span><span class="label">TryHackMe</span></div>
-          <p class="cred-note">Ranking reflects standing on the TryHackMe platform.</p>
-        </div>
-        
-        <div class="cred-card reveal reveal-up" style="transition-delay:.1s">
-          <h3>Ongoing interests</h3>
+          <h3>Technical credentials</h3>
           <ul class="learning-list">
-            <li>Advanced web application exploitation techniques</li>
-            <li>Secure mobile architecture for Android &amp; iOS</li>
-            <li>Applied OSINT methodology</li>
-            <li>Security automation &amp; tooling</li>
+            <li><strong>Geez Tech — GTST</strong><span class="cred-detail">Technical security training</span></li>
+            <li><strong>Geez Tech — GTWSS</strong><span class="cred-detail">Website security</span></li>
+            <li><strong>INSA — Ethical Hacking</strong><span class="cred-detail">Ethical hacking training</span></li>
           </ul>
+        </div>
+        <div class="cred-card reveal reveal-up" style="transition-delay:.08s">
+          <h3>Additional learning</h3>
+          <ul class="learning-list">
+            <li><strong>Udemy — Ethical Hacking</strong><span class="cred-detail">Hands-on security fundamentals</span></li>
+            <li><strong>Udemy — Red Teaming</strong><span class="cred-detail">Offensive security concepts</span></li>
+            <li><strong>Udemy — Network Security Specialist</strong><span class="cred-detail">Network defense and security</span></li>
+            <li><strong>CKS</strong><span class="cred-detail">Cybersecurity learning / training</span></li>
+          </ul>
+        </div>
+        <div class="cred-card reveal reveal-up" style="transition-delay:.16s">
+          <h3>Current progress</h3>
+          <div class="cred-stat"><span class="big">Top 3%</span><span class="label">TryHackMe</span></div>
+          <p class="cred-note">A hands-on learning platform ranking.</p>
+          <div class="cred-divider"></div>
+          <p class="cred-item-title">GTCRT — Geez Tech</p>
+          <p class="cred-note">Planned / upcoming credential. Listed separately from completed credentials.</p>
+          <p class="cred-note">Certificates and course titles are listed as provided. Verification links can be added when certificate URLs are available.</p>
         </div>
       </div>
     </div>
@@ -470,7 +593,38 @@
           <a href="https://github.com/yohaneseyohe" target="_blank" rel="noopener noreferrer">GitHub <span class="k">@yohaneseyohe</span></a>
           <a href="https://www.instagram.com/eyohe_anon/" target="_blank" rel="noopener noreferrer">Instagram <span class="k">@eyohe_anon</span></a>
           <a href="https://t.me/yohaneseyoheanon" target="_blank" rel="noopener noreferrer">Telegram <span class="k">@yohaneseyoheanon</span></a>
-          <a href="callto:+251900351449">Phone <span class="k">+251 900351449</span></a>
+          <a href="tel:+251900351449">Phone <span class="k">+251 900351449</span></a>
+        </div>
+        <div class="cred-divider" aria-hidden="true"></div>
+        <div class="payment-showcase" id="payment-methods">
+          <p class="eyebrow payment-eyebrow">Flexible &amp; secure</p>
+          <h3 class="payment-main-title">Payments for <span>Global</span> &amp; <span>Local</span> Clients</h3>
+          <p class="payment-intro">Choose the payment method that works best for you. Secure, straightforward, and arranged before work begins.</p>
+          <div class="payment-feature-grid">
+            <article class="payment-feature crypto-feature">
+              <div class="payment-feature-top"><span class="payment-icon crypto" aria-hidden="true">₮</span><span class="payment-index">01 / GLOBAL</span></div>
+              <h4>Crypto — USDT <span class="payment-tag">Tether</span></h4>
+              <p class="payment-muted">Stable · Fast · Borderless</p>
+              <p class="payment-copy">USDT payments are accepted by arrangement. Select a supported network below and confirm the wallet details with me before sending.</p>
+              <div class="network-list" aria-label="Supported USDT networks">
+                <div class="network-row"><span class="network-symbol tron" aria-hidden="true">T</span><span class="network-info"><strong>TRC20 <small>(Tron)</small></strong><small>Fast · Typically low fees</small></span><span class="network-status recommended">Popular</span></div>
+                <div class="network-row"><span class="network-symbol ethereum" aria-hidden="true">◆</span><span class="network-info"><strong>ERC20 <small>(Ethereum)</small></strong><small>Widely supported</small></span><span class="network-status">Supported</span></div>
+                <div class="network-row"><span class="network-symbol bnb" aria-hidden="true">⬡</span><span class="network-info"><strong>BEP20 <small>(BNB Smart Chain)</small></strong><small>Fast · Often low fees</small></span><span class="network-status">Supported</span></div>
+                <div class="network-row"><span class="network-symbol solana" aria-hidden="true">≋</span><span class="network-info"><strong>Solana <small>(SPL)</small></strong><small>Only after confirmation</small></span><span class="network-status">Ask first</span></div>
+              </div>
+              <p class="payment-warning">Important: confirm the exact network and wallet address with me first. Never send funds until the details are confirmed.</p>
+            </article>
+            <article class="payment-feature local-feature">
+              <div class="payment-feature-top"><span class="payment-icon local-icon" aria-hidden="true">⌂</span><span class="payment-index">02 / LOCAL</span></div>
+              <h4>Local Payments</h4>
+              <p class="payment-muted">Flexible · Convenient · Direct</p>
+              <p class="payment-copy">Local payment options can be discussed based on your location and preference. Contact me and we’ll agree on a convenient method before starting.</p>
+              <div class="local-payment-visual" aria-hidden="true"><span class="local-orbit orbit-one"></span><span class="local-orbit orbit-two"></span><span class="local-currency">ETB</span><span class="local-mini-card">✓ Secure</span></div>
+              <a class="payment-cta" href="https://t.me/yohaneseyoheanon" target="_blank" rel="noopener noreferrer"><span>Discuss a payment method</span><span aria-hidden="true">↗</span></a>
+              <p class="payment-availability">Available by arrangement · Clear terms before payment</p>
+            </article>
+          </div>
+          <div class="payment-trust-row"><div><span class="trust-icon" aria-hidden="true">♢</span><span><strong>Secure transactions</strong><small>Confirm details first</small></span></div><div><span class="trust-icon" aria-hidden="true">ϟ</span><span><strong>Flexible options</strong><small>Global and local clients</small></span></div><div><span class="trust-icon" aria-hidden="true">↔</span><span><strong>Clear communication</strong><small>Agree on terms upfront</small></span></div></div>
         </div>
       </div>
     </div>
@@ -484,6 +638,23 @@
   </div>
 </footer>
 
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Person",
+  "name":"Yohanes Mesfin",
+  "alternateName":"EYOHE",
+  "jobTitle":"Cybersecurity Specialist and Software Developer",
+  "email":"eyohesecurity@gmail.com",
+  "url":"https://github.com/yohaneseyohe",
+  "sameAs":[
+    "https://github.com/yohaneseyohe",
+    "https://www.instagram.com/eyohe_anon/",
+    "https://t.me/yohaneseyoheanon"
+  ],
+  "knowsAbout":["Cybersecurity","Web Application Security","Ethical Hacking","Secure Software Development","OSINT","Linux and Networking"]
+}
+</script>
 <script>
   (function(){
     document.getElementById('year').textContent = new Date().getFullYear();
@@ -493,6 +664,13 @@
     menuBtn.addEventListener('click', function(){
       var open = body.classList.toggle('nav-open');
       menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    document.addEventListener('keydown', function(e){
+      if (e.key === 'Escape' && body.classList.contains('nav-open')) {
+        body.classList.remove('nav-open');
+        menuBtn.setAttribute('aria-expanded', 'false');
+        menuBtn.focus();
+      }
     });
     document.querySelectorAll('#mobile-nav a').forEach(function(a){
       a.addEventListener('click', function(){
@@ -590,11 +768,22 @@
     if (copyBtn){
       copyBtn.addEventListener('click', function(){
         var email = 'eyohesecurity@gmail.com';
+        function showCopyState(label){
+          copyBtn.textContent = label;
+          setTimeout(function(){ copyBtn.textContent = 'Copy email'; }, 1800);
+        }
         if (navigator.clipboard && navigator.clipboard.writeText){
           navigator.clipboard.writeText(email).then(function(){
-            copyBtn.textContent = 'Copied';
-            setTimeout(function(){ copyBtn.textContent = 'Copy email'; }, 1800);
-          }).catch(function(){ copyBtn.textContent = 'Copy failed'; });
+            showCopyState('Copied');
+          }).catch(function(){ showCopyState('Copy failed'); });
+        } else {
+          var temp = document.createElement('textarea');
+          temp.value = email; temp.setAttribute('readonly', '');
+          temp.style.position = 'absolute'; temp.style.left = '-9999px';
+          document.body.appendChild(temp); temp.select();
+          try { showCopyState(document.execCommand('copy') ? 'Copied' : 'Copy failed'); }
+          catch(err) { showCopyState('Copy failed'); }
+          temp.remove();
         }
       });
     }
